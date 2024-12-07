@@ -51,5 +51,25 @@ buttonElementDi.addEventListener('click', function (event) {
     console.log(sum)
 })
 
+var ButtonRequest = document.getElementById('request');
+console.log(ButtonRequest)
+
+ButtonRequest.addEventListener('click',function(event){
+    fetch('http://dummyjson.com/test')
+    .then(resp => console.log(resp))
 
 
+
+
+
+
+
+})
+
+function add(n1,n2){ 
+    return n1+n2;
+}
+var a1=1000000000;
+var a2=1000000000000000000000000000000;
+var result = add(a1,a2);
+console.log(result);
